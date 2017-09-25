@@ -21,7 +21,7 @@ def _run_alembic_command(alembic_cmd: Callable, engine, metadata, *args, **kwarg
         alembic_cfg.attributes['connection'] = connection
         alembic_cmd(alembic_cfg, *args, **kwargs)
 
-def create_revision(db_backend: SQLAlchemyBackend, message: str) -> NoReturn:
+def create_revision(db_backend: SQLAlchemyBackend, message: str):
     _run_alembic_command(command.revision,db_backend.engine, db_backend.metadata, message=message, autogenerate=True)
 
 def initialize(db_backend: SQLAlchemyBackend) -> NoReturn:
