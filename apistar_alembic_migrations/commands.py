@@ -1,5 +1,4 @@
 from apistar.backends.sqlalchemy_backend import SQLAlchemyBackend
-from .alembic_migration import AlembicMigration
 from typing import NoReturn, Callable
 from alembic import command
 from alembic.config import Config
