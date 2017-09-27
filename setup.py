@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='apistar_alembic_migrations',
-    version='0.0.4',
+    version='0.0.5',
     license='MIT',
     url="https://github.com/colanconnon/apistar_alembic_migrations",
     description='Alembic migrations for apistar',
