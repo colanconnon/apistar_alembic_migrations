@@ -24,6 +24,12 @@ app = App(
 )
 ```
 
+### To generation the initial migrations structure
+
+```
+apistar initialaize
+```
+
 
 ### The following commands will become avaiable
 
