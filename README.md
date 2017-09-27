@@ -1,16 +1,16 @@
-`Alembic migrations for apistar`
+# Alembic migrations for apistar
 
-`
-To Install this library
-`
+
+### To Install this library
+
 
 ```
 pip3 install git+https://github.com/colanconnon/apistar_alembic_migrations.git#egg=apistar_alembic_migrations --upgrade
 ```
 
-`
- Register the commands
-`
+
+### Register the commands
+
 
 ```
 from apistar_alembic_migrations import commands
@@ -24,9 +24,9 @@ app = App(
 )
 ```
 
-`
-    The following commands will become avaiable
-`
+
+### The following commands will become avaiable
+
 
 ```
 apistar initialize
@@ -39,9 +39,8 @@ apistar downgrade "revision id"
 
 ```
 
-`
-    Enabling auto migrations
-`
+### Enabling auto generating of migrations from models
+
 * open your env.py file in your migrations folder
 
 * find the line that contains
