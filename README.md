@@ -5,7 +5,7 @@
 
 
 ```
-pip3 install git+https://github.com/colanconnon/apistar_alembic_migrations.git#egg=apistar_alembic_migrations --upgrade
+pip3 install apistar_alembic_migrations
 ```
 
 
