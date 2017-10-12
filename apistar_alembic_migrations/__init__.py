@@ -1,5 +1,5 @@
 from apistar.backends.sqlalchemy_backend import SQLAlchemyBackend
-from typing import NoReturn, Callable
+from typing import Callable
 from alembic import command
 from alembic.config import Config
 from apistar import Command
@@ -26,7 +26,7 @@ def _run_alembic_command(alembic_cmd: Callable, engine, metadata, *args, **kwarg
 def create_revision(db_backend: SQLAlchemyBackend, message: str):
     _run_alembic_command(command.revision,db_backend.engine, db_backend.metadata, message=message, autogenerate=True)
 
-def initialize(db_backend: SQLAlchemyBackend) -> NoReturn:
+def initialize(db_backend: SQLAlchemyBackend):
     _run_alembic_command(command.init, db_backend.engine, db_backend.metadata, directory=MIGRATIONS_DIRECTORY)
 
 def downgrade(db_backend: SQLAlchemyBackend, revision):
