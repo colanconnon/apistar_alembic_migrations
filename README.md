@@ -27,7 +27,7 @@ app = App(
 ### To generation the initial migrations structure
 
 ```
-apistar initialaize
+apistar initialize
 ```
 
 
